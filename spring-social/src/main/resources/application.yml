@@ -1,8 +1,8 @@
 spring:
     datasource:
-        url: jdbc:mysql://localhost:3306/spring_social?useSSL=false&serverTimezone=UTC&useLegacyDatetimeCode=false
-        username: root
-        password: callicoder
+        url: jdbc:h2:file:./database/mydb
+        username: sa
+        password: ''
 
     jpa:
         show-sql: true
@@ -11,14 +11,14 @@ spring:
             naming-strategy: org.hibernate.cfg.ImprovedNamingStrategy
         properties:
             hibernate:
-                dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+                dialect: org.hibernate.dialect.H2Dialect
     security:
       oauth2:
         client:
           registration:
             google:
-              clientId: 5014057553-8gm9um6vnli3cle5rgigcdjpdrid14m9.apps.googleusercontent.com
-              clientSecret: tWZKVLxaD_ARWsriiiUFYoIk
+              clientId: 273196954568-lhrvmtcg8k71bfe74smfddu4do5hg084.apps.googleusercontent.com
+              clientSecret: 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
               redirectUri: "{baseUrl}/oauth2/callback/{registrationId}"
               scope:
                 - email

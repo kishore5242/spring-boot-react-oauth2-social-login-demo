@@ -1,0 +1,54 @@
+2023-01-24 17:04:02 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE USERS (ID BIGINT NOT NULL AUTO_INCREMENT, EMAIL VARCHAR(255) NOT NULL, EMAIL_VERIFIED BIT NOT NULL, IMAGE_URL VARCHAR(255), NAME VARCHAR(255) NOT NULL, PASSWORD VARCHAR(255), PROVIDER VARCHAR(255) NOT NULL, PROVIDER_ID VARCHAR(255), PRIMARY KEY (ID)) ENGINE=[*]INNODB"; expected "identifier"; SQL statement:
+create table users (id bigint not null auto_increment, email varchar(255) not null, email_verified bit not null, image_url varchar(255), name varchar(255) not null, password varchar(255), provider varchar(255) not null, provider_id varchar(255), primary key (id)) engine=InnoDB [42001-200]
+2023-01-24 17:04:02 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "USERS" not found; SQL statement:
+alter table users drop index UK6dotkott2kjsp8vw4d0m25fb7 [42102-200]
+2023-01-24 17:04:02 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "USERS" not found; SQL statement:
+alter table users add constraint UK6dotkott2kjsp8vw4d0m25fb7 unique (email) [42102-200]
+2023-01-24 17:06:19 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE USERS (ID BIGINT NOT NULL AUTO_INCREMENT, EMAIL VARCHAR(255) NOT NULL, EMAIL_VERIFIED BIT NOT NULL, IMAGE_URL VARCHAR(255), NAME VARCHAR(255) NOT NULL, PASSWORD VARCHAR(255), PROVIDER VARCHAR(255) NOT NULL, PROVIDER_ID VARCHAR(255), PRIMARY KEY (ID)) ENGINE=[*]INNODB"; expected "identifier"; SQL statement:
+create table users (id bigint not null auto_increment, email varchar(255) not null, email_verified bit not null, image_url varchar(255), name varchar(255) not null, password varchar(255), provider varchar(255) not null, provider_id varchar(255), primary key (id)) engine=InnoDB [42001-200]
+2023-01-24 17:06:19 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "USERS" not found; SQL statement:
+alter table users drop index UK6dotkott2kjsp8vw4d0m25fb7 [42102-200]
+2023-01-24 17:06:19 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "USERS" not found; SQL statement:
+alter table users add constraint UK6dotkott2kjsp8vw4d0m25fb7 unique (email) [42102-200]
+2023-01-24 17:06:32 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE USERS (ID BIGINT NOT NULL AUTO_INCREMENT, EMAIL VARCHAR(255) NOT NULL, EMAIL_VERIFIED BIT NOT NULL, IMAGE_URL VARCHAR(255), NAME VARCHAR(255) NOT NULL, PASSWORD VARCHAR(255), PROVIDER VARCHAR(255) NOT NULL, PROVIDER_ID VARCHAR(255), PRIMARY KEY (ID)) ENGINE=[*]INNODB"; expected "identifier"; SQL statement:
+create table users (id bigint not null auto_increment, email varchar(255) not null, email_verified bit not null, image_url varchar(255), name varchar(255) not null, password varchar(255), provider varchar(255) not null, provider_id varchar(255), primary key (id)) engine=InnoDB [42001-200]
+2023-01-24 17:06:32 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "USERS" not found; SQL statement:
+alter table users drop index UK6dotkott2kjsp8vw4d0m25fb7 [42102-200]
+2023-01-24 17:06:32 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "USERS" not found; SQL statement:
+alter table users add constraint UK6dotkott2kjsp8vw4d0m25fb7 unique (email) [42102-200]
+2023-01-24 17:11:07 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "USERS" not found; SQL statement:
+select user0_.id as id1_0_, user0_.email as email2_0_, user0_.email_verified as email_ve3_0_, user0_.image_url as image_ur4_0_, user0_.name as name5_0_, user0_.password as password6_0_, user0_.provider as provider7_0_, user0_.provider_id as provider8_0_ from users user0_ where user0_.email=? [42102-200]
+2023-01-24 17:11:16 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "USERS" not found; SQL statement:
+select user0_.id as id1_0_, user0_.email as email2_0_, user0_.email_verified as email_ve3_0_, user0_.image_url as image_ur4_0_, user0_.name as name5_0_, user0_.password as password6_0_, user0_.provider as provider7_0_, user0_.provider_id as provider8_0_ from users user0_ where user0_.email=? [42102-200]
+2023-01-24 17:11:44 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "USERS" not found; SQL statement:
+select user0_.id as col_0_0_ from users user0_ where user0_.email=? limit ? [42102-200]
+2023-01-24 17:17:33 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE APP-[*]USERS (ID BIGINT NOT NULL AUTO_INCREMENT, EMAIL VARCHAR(255) NOT NULL, EMAIL_VERIFIED BIT NOT NULL, IMAGE_URL VARCHAR(255), NAME VARCHAR(255) NOT NULL, PASSWORD VARCHAR(255), PROVIDER VARCHAR(255) NOT NULL, PROVIDER_ID VARCHAR(255), PRIMARY KEY (ID)) ENGINE=INNODB"; SQL statement:
+create table app-users (id bigint not null auto_increment, email varchar(255) not null, email_verified bit not null, image_url varchar(255), name varchar(255) not null, password varchar(255), provider varchar(255) not null, provider_id varchar(255), primary key (id)) engine=InnoDB [42000-200]
+2023-01-24 17:17:33 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "ALTER TABLE APP-[*]USERS DROP INDEX UKA3FSVBOA9WOKOG33H1G5PTI85"; expected "., ADD, SET, RENAME, DROP, ALTER"; SQL statement:
+alter table app-users drop index UKa3fsvboa9wokog33h1g5pti85 [42001-200]
+2023-01-24 17:17:33 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "ALTER TABLE APP-[*]USERS ADD CONSTRAINT UKA3FSVBOA9WOKOG33H1G5PTI85 UNIQUE (EMAIL)"; expected "., ADD, SET, RENAME, DROP, ALTER"; SQL statement:
+alter table app-users add constraint UKa3fsvboa9wokog33h1g5pti85 unique (email) [42001-200]
+2023-01-24 17:18:31 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE APP_USERS (ID BIGINT NOT NULL AUTO_INCREMENT, EMAIL VARCHAR(255) NOT NULL, EMAIL_VERIFIED BIT NOT NULL, IMAGE_URL VARCHAR(255), NAME VARCHAR(255) NOT NULL, PASSWORD VARCHAR(255), PROVIDER VARCHAR(255) NOT NULL, PROVIDER_ID VARCHAR(255), PRIMARY KEY (ID)) ENGINE=[*]INNODB"; expected "identifier"; SQL statement:
+create table app_users (id bigint not null auto_increment, email varchar(255) not null, email_verified bit not null, image_url varchar(255), name varchar(255) not null, password varchar(255), provider varchar(255) not null, provider_id varchar(255), primary key (id)) engine=InnoDB [42001-200]
+2023-01-24 17:18:31 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "APP_USERS" not found; SQL statement:
+alter table app_users drop index UK4vj92ux8a2eehds1mdvmks473 [42102-200]
+2023-01-24 17:18:31 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "APP_USERS" not found; SQL statement:
+alter table app_users add constraint UK4vj92ux8a2eehds1mdvmks473 unique (email) [42102-200]

@@ -6,7 +6,7 @@ import javax.validation.constraints.Email;
 import javax.validation.constraints.NotNull;
 
 @Entity
-@Table(name = "users", uniqueConstraints = {
+@Table(name = "app_users", uniqueConstraints = {
         @UniqueConstraint(columnNames = "email")
 })
 public class User {
